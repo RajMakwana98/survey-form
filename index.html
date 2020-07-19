@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="body">
+    <h1 id="title">MCU Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  
+    <form id="survey-form">
+      <label id="name-label" for="name"><p>Name</p></label>
+      <input id="name" type="text" name="name"  placeholder="Enter Name" required/>
+
+      <label id="email-label" for="email"><p>Email</p></label>
+      <input id="email" type="email" name="email"  placeholder="Enter Email" required/>
+
+      <label id="number-label" for="number"><p>Age</p></label>
+      <input id="number" type="number" min="12" max="99" name="number"  placeholder="Enter Age" required/>
+
+      <p>Which MCU movies you Like</p>
+    <input type="radio" name="movies" value="1">Iron Man</input><br>
+    <input type="radio" name="movies" value="2">Captain America</input><br>
+    <input type="radio" name="movies" value="3">Thor</input><br>
+    <input type="radio" name="movies" value="4">Hulk</input><br>
+    <input type="radio" name="movies" value="5">Spider Man</input><br>
+    <input type="radio" name="movies" value="6">Captain Marvel</input><br>
+    <input type="radio" name="movies" value="7">Ant Man</input><br>
+    <input type="radio" name="movies" value="8">Dr. Strange</input><br>
+    <input type="radio" name="movies" value="9">Black panther</input>
+
+    <p>Which Super Hero Do You Like Most</p>
+      <select name="dropdown" id="dropdown">
+        <option value="selected" selected>--Select Movie--</option>
+        <option value="ironman1">Iron Man (2008)</option>
+        <option value="hulk">The Incredible Hulk (2008)</option>
+        <option value="ironman2">Iron Man 2 (2010)</option>
+        <option value="thor1">Thor (2011)</option>
+        <option value="america1">Captain America: The First Avenger (2011)</option>
+        <option value="avenger1">The Avengers (2012)</option>
+        <option value="ironman3">Iron Man 3 (2013)</option>
+        <option value="thor2">Thor: The Dark World (2013)</option>
+        <option value="america2">Captain America: The Winter Soldier (2014)</option>
+        <option value="galaxy1">Guardians of the Galaxy (2014)</option>
+        <option value="avenger2">Avengers: Age of Ultron (2015)</option>
+        <option value="antman1">Ant-Man (2015)</option>
+        <option value="america3">Captain America: Civil War (2016)</option>
+        <option value="stange">Doctor Strange (2016)</option>
+        <option value="galaxy2">Guardians of the Galaxy Vol. 2 (2017)</option>
+        <option value="spiderman1">Spider-Man: Homecoming (2017)</option>
+        <option value="thor3">Spider-Man: Homecoming (2017)</option>
+        <option value="panther">Black Panther (2018)</option>
+        <option value="avenger3">Avengers: Infinity War (2018)</option>
+        <option value="antman2">Ant-Man and the Wasp (2018))</option>
+        <option value="marvel">Captain Marvel (2019)</option>
+        <option value="avenger4">Avengers: Endgame (2019)</option>
+      </select>
+
+    <p>MCU Super Hero Qualities you Like</p>
+    <input type="checkbox" name="quality" value="moral">Moral Center</input><br>
+    <input type="checkbox" name="quality" value="stand">Stand for Something</input><br>
+    <input type="checkbox" name="quality" value="loyality">Loyality</input><br>
+    <input type="checkbox" name="quality" value="daring">Daring</input><br>
+    <input type="checkbox" name="quality" value="protect">Protect his Team</input><br>
+    <input type="checkbox" name="quality" value="strength">Adapt strengths and weakness</input><br>
+    <input type="checkbox" name="quality" value="Costume">Costume</input><br>
+    <input type="checkbox" name="quality" value="Weapon">Weapon</input><br><br>
+    <textarea id="comment" cols="40" rows="4" placeholder="Add Your Comments Here"></textarea><br>
+
+    <input type="submit" id="submit" value="Submit" >
+
+    </form>
+   </div>
+  </body>
+</html>
